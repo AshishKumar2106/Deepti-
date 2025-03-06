@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Love Calculator for Deepti</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Love Calculator, Deepti</h1>
+    <input type="text" id="your-name" placeholder="Your Name">
+    <input type="text" id="her-name" placeholder="Deepti" value="Deepti">
+    <button onclick="calculateLove()">Calculate</button>
+    <p id="result"></p>
+    <script>
+        function calculateLove() {
+            const loveScore = Math.floor(Math.random() * 100) + 1;
+            document.getElementById('result').innerText = `Our love is ${loveScore}% strong, Deepti!`;
+        }
+    </script>
+</body>
+</html>
