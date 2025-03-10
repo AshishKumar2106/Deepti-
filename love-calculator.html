@@ -5,12 +5,14 @@
     <title>Love Calculator for Deepti</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1>Love Calculator, Deepti</h1>
-    <input type="text" id="your-name" placeholder="Your Name">
-    <input type="text" id="her-name" placeholder="Deepti" value="Deepti">
-    <button onclick="calculateLove()">Calculate</button>
-    <p id="result"></p>
+<body class="love-bg">
+    <div class="grid-box">
+        <h1>Love Calculator, Deepti</h1>
+        <input type="text" id="your-name" placeholder="Your Name">
+        <input type="text" id="her-name" placeholder="Deepti" value="Deepti">
+        <button onclick="calculateLove()">Calculate</button>
+        <p id="result"></p>
+    </div>
     <script>
         function calculateLove() {
             const loveScore = Math.floor(Math.random() * 100) + 1;

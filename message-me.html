@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Message Me, Deepti</title>
+    <title>Whisper to Me, Deepti</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1>Leave Me a Note, Deepti</h1>
-    <textarea id="message" placeholder="Type something sweet..."></textarea>
-    <button onclick="saveMessage()">Save</button>
-    <p id="saved-message"></p>
+<body class="message-bg">
+    <div class="card-box">
+        <h1>Whisper to Me, Deepti</h1>
+        <textarea id="message" placeholder="Share your heart..."></textarea>
+        <button onclick="saveMessage()">Save</button>
+        <p id="saved-message"></p>
+    </div>
     <script>
         function saveMessage() {
             const msg = document.getElementById('message').value;
