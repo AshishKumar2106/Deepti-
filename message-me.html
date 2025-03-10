@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Message Me, Deepti</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Leave Me a Note, Deepti</h1>
+    <textarea id="message" placeholder="Type something sweet..."></textarea>
+    <button onclick="saveMessage()">Save</button>
+    <p id="saved-message"></p>
+    <script>
+        function saveMessage() {
+            const msg = document.getElementById('message').value;
+            localStorage.setItem('deeptiMessage', msg);
+            document.getElementById('saved-message').textContent = 'Saved: ' + msg;
+        }
+        window.onload = function() {
+            const saved = localStorage.getItem('deeptiMessage');
+            if (saved) document.getElementById('saved-message').textContent = 'Last saved: ' + saved;
+        }
+    </script>
+</body>
+</html>
